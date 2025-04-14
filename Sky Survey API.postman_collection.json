@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "7a5a9b93-00f7-4ca0-a524-0d6b83ae8472",
+		"name": "Sky Survey API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "16269509"
+	},
+	"item": [
+		{
+			"name": "Get questions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{endpoint}}/questions"
+			},
+			"response": [
+				{
+					"name": "Get questions",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{endpoint}}/questions"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.12.3"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 14 Apr 2025 07:28:59 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2723"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization, true"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"questions\": [\n        {\n            \"description\": \"[Surname] [First Name] [Other Names]\",\n            \"id\": 1,\n            \"name\": \"full_name\",\n            \"options\": [],\n            \"required\": true,\n            \"text\": \"What is your full name?\",\n            \"type\": \"short_text\"\n        },\n        {\n            \"description\": null,\n            \"id\": 2,\n            \"name\": \"email_address\",\n            \"options\": [],\n            \"required\": true,\n            \"text\": \"What is your email address?\",\n            \"type\": \"email\"\n        },\n        {\n            \"description\": null,\n            \"id\": 3,\n            \"name\": \"description\",\n            \"options\": [],\n            \"required\": true,\n            \"text\": \"Tell us a bit more about yourself\",\n            \"type\": \"long_text\"\n        },\n        {\n            \"description\": null,\n            \"id\": 4,\n            \"name\": \"gender\",\n            \"options\": [\n                {\n                    \"id\": 1,\n                    \"label\": \"Male\",\n                    \"value\": \"MALE\"\n                },\n                {\n                    \"id\": 2,\n                    \"label\": \"Female\",\n                    \"value\": \"FEMALE\"\n                },\n                {\n                    \"id\": 3,\n                    \"label\": \"Other\",\n                    \"value\": \"OTHER\"\n                }\n            ],\n            \"required\": true,\n            \"text\": \"What is your gender?\",\n            \"type\": \"single_choice\"\n        },\n        {\n            \"description\": \"You can select multiple\",\n            \"id\": 5,\n            \"name\": \"programming_stack\",\n            \"options\": [\n                {\n                    \"id\": 4,\n                    \"label\": \"React JS\",\n                    \"value\": \"REACT\"\n                },\n                {\n                    \"id\": 5,\n                    \"label\": \"Angular JS\",\n                    \"value\": \"ANGULAR\"\n                },\n                {\n                    \"id\": 6,\n                    \"label\": \"Vue JS\",\n                    \"value\": \"VUE\"\n                },\n                {\n                    \"id\": 7,\n                    \"label\": \"SQL\",\n                    \"value\": \"SQL\"\n                },\n                {\n                    \"id\": 8,\n                    \"label\": \"Postgres\",\n                    \"value\": \"POSTGRES\"\n                },\n                {\n                    \"id\": 9,\n                    \"label\": \"MySQL\",\n                    \"value\": \"MYSQL\"\n                },\n                {\n                    \"id\": 10,\n                    \"label\": \"Microsoft SQL Server\",\n                    \"value\": \"MSSQL\"\n                },\n                {\n                    \"id\": 11,\n                    \"label\": \"Java\",\n                    \"value\": \"Java\"\n                },\n                {\n                    \"id\": 12,\n                    \"label\": \"PHP\",\n                    \"value\": \"PHP\"\n                },\n                {\n                    \"id\": 13,\n                    \"label\": \"Go\",\n                    \"value\": \"GO\"\n                },\n                {\n                    \"id\": 14,\n                    \"label\": \"Rust\",\n                    \"value\": \"RUST\"\n                }\n            ],\n            \"required\": true,\n            \"text\": \"What programming stack are you familiar with?\",\n            \"type\": \"multiple_choice\"\n        },\n        {\n            \"description\": \"You can upload multiple (.pdf)\",\n            \"id\": 6,\n            \"name\": \"certificates\",\n            \"options\": [],\n            \"required\": true,\n            \"text\": \"Upload any of your certificates\",\n            \"type\": \"file\"\n        }\n    ],\n    \"status\": 200,\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Get responses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{endpoint}}/questions/responses"
+			},
+			"response": [
+				{
+					"name": "Get responses",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{endpoint}}/questions/responses"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.12.3"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 14 Apr 2025 07:29:37 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1112"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization, true"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responses\": [\n        {\n            \"certificates\": [\n                {\n                    \"id\": 1,\n                    \"name\": \"degree-cert.pdf\",\n                    \"url\": \"degree-cert.pdf\"\n                },\n                {\n                    \"id\": 2,\n                    \"name\": \"cloud-dev-cert.pdf\",\n                    \"url\": \"cloud-dev-cert.pdf\"\n                }\n            ],\n            \"date_responded\": \"Mon, 14 Apr 2025 09:22:12 GMT\",\n            \"description\": \"I am a Software Engineer with three years experience in software development.\",\n            \"email_address\": \"jimmysilas17@gmail.com\",\n            \"full_name\": \"Jimmy Silas\",\n            \"gender\": \"MALE\",\n            \"id\": 1,\n            \"programming_stack\": \"ANGULAR,VUE,SQL,POSTGRES,MYSQL\"\n        },\n        {\n            \"certificates\": [\n                {\n                    \"id\": 3,\n                    \"name\": \"empty_certificate.pdf\",\n                    \"url\": \"empty_certificate.pdf\"\n                }\n            ],\n            \"date_responded\": \"Mon, 14 Apr 2025 09:22:12 GMT\",\n            \"description\": \"I am a freelancer web developer\",\n            \"email_address\": \"johndoe@domain.com\",\n            \"full_name\": \"Doe John\",\n            \"gender\": \"MALE\",\n            \"id\": 2,\n            \"programming_stack\": \"REACT,PHP\"\n        }\n    ],\n    \"status\": 200,\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Get responses by email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}/questions/responses?email_address=jimmysilas17@gmail.com",
+					"host": [
+						"{{endpoint}}"
+					],
+					"path": [
+						"questions",
+						"responses"
+					],
+					"query": [
+						{
+							"key": "email_address",
+							"value": "jimmysilas17@gmail.com"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get responses by email",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/questions/responses?email_address=jimmysilas17@gmail.com",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"questions",
+								"responses"
+							],
+							"query": [
+								{
+									"key": "email_address",
+									"value": "jimmysilas17@gmail.com"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.12.3"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 14 Apr 2025 07:25:08 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "676"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization, true"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responses\": [\n        {\n            \"certificates\": [\n                {\n                    \"id\": 1,\n                    \"name\": \"degree-cert.pdf\",\n                    \"url\": \"degree-cert.pdf\"\n                },\n                {\n                    \"id\": 2,\n                    \"name\": \"cloud-dev-cert.pdf\",\n                    \"url\": \"cloud-dev-cert.pdf\"\n                }\n            ],\n            \"date_responded\": \"Mon, 14 Apr 2025 09:22:12 GMT\",\n            \"description\": \"I am a Software Engineer with three years experience in software development.\",\n            \"email_address\": \"jimmysilas17@gmail.com\",\n            \"full_name\": \"Jimmy Silas\",\n            \"gender\": \"MALE\",\n            \"id\": 1,\n            \"programming_stack\": \"ANGULAR,VUE,SQL,POSTGRES,MYSQL\"\n        }\n    ],\n    \"status\": 200,\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Get certificate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{endpoint}}/questions/responses/certificates/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Add response",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "full_name",
+							"value": "Doe Jane",
+							"type": "text"
+						},
+						{
+							"key": "email_address",
+							"value": "janedoe@domain.com",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "FEMALE",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "I am a freelancer",
+							"type": "text"
+						},
+						{
+							"key": "programming_stack",
+							"value": "REACT,Java",
+							"type": "text"
+						},
+						{
+							"key": "certificates",
+							"type": "file",
+							"src": "/home/silasjimmy/Downloads/empty certificate.pdf"
+						}
+					]
+				},
+				"url": "{{endpoint}}/questions/responses"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "endpoint",
+			"value": "http://127.0.0.1:5000/api",
+			"type": "string"
+		},
+		{
+			"key": "prod-endpoint",
+			"value": "https://sky-world-survey-api.onrender.com/api",
+			"type": "string"
+		}
+	]
+}
